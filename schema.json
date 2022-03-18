@@ -1,35 +1,102 @@
 {
-    "LIFESTAGE": ["ADULT", "JUVENILE", "PUPA", "LARVA", "ZYGOTE", "EMBRYO", "EGG"],
-    "SEX":["FEMALE","MALE","HERMAPHRODITE_MONOECIOUS","NOT_COLLECTED","NOT_APPLICABLE","NOT _PROVIDED"],
-    "ORGANISM_PART":
-    {
-        "terms_for_animals":["WHOLE_ORGANISM","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE","FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","POSTERIOR_BODY","HEPATOPANCREAS","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL"],
-        "OTHER_SOMATIC_ANIMAL_TISSUE":["OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG"],
-        "OTHER_REPRODUCTIVE_ANIMAL_TISSUE":["WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT"],
-        "OTHER_PLANT_TISSUE":["MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE"],
-        "OTHER_FUNGAL_TISSUE":["NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
+    "LIFESTAGE": {
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["ADULT", "JUVENILE", "PUPA", "LARVA", "ZYGOTE", "EMBRYO", "EGG"]
     },
-    "GAL":["SANGER INSTITUTE","EARLHAM INSTITUTE","CNAG","SCILIFELAB","WGGC","NCCT","DRESDEN CONCEPT","FGC ZURICH","GENOSCOPE","GTF LAUSANNE","HELSINKI GENOMICS CORE FACILITY","NGS BERN","NORWEGIAN SEQUENCING CENTRE","UNIVERSITY OF BARI","UNIVERSITY OF FLORENCE","NEUROMICS SUPPORT FACILITY VIB","GIGAGENOMICS CORE UNIVERSITY LIEGE"],
-    "DIFFICULT_OR_HIGH_PRIORITY_SAMPLE":["SANGER INSTITUTE","EARLHAMHIGH_PRIORITY","DIFFICULT","NOT_APPLICABLE","NOT_PROVIDED","NOT_COLLECTED","FULL_CURATION"],
-    "SPECIMEN_ID_RISK":["Y","N"],
-    "SIZE_OF_TISSUE_IN_TUBE":["VS","S","M","L","SINGLE_CELL","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"],
-    "TISSUE_REMOVED_FOR_BARCODING":["Y","N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"],
-    "TISSUE_FOR_BARCODING":
-    {
-        "terms_for_animals":["WHOLE_ORGANISM","HEAD","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE", "FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","MID_BODY","POSTERIOR_BODY","HEPATOPANCREAS","LEG","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL"],
-        "OTHER_SOMATIC_ANIMAL_TISSUE":["OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG"],
-        "OTHER_REPRODUCTIVE_ANIMAL_TISSUE":["WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT"],
-        "OTHER_PLANT_TISSUE":["MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE"],
-        "OTHER_FUNGAL_TISSUE":["NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
+    "SEX":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["FEMALE","MALE","HERMAPHRODITE_MONOECIOUS","NOT_COLLECTED","NOT_APPLICABLE","NOT _PROVIDED"]
     },
-    "DNA_REMOVED_FOR_BIOBANKING":["Y", "N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"],
-    "PURPOSE_OF_SPECIMEN":["REFERENCE_GENOME","SHORT_READ_SEQUENCING","DNA_BARCODING_ONLY","RNA_SEQUENCING","PROXY_VOUCHERING_ONLY"],
-    "HAZARD_GROUP":["HG1","HG2","HG3"],
-    "REGULATORY_COMPLIANCE":["Y","N","NOT_APPLICABLE"],
-    "INDIGENOUS_RIGHTS_APPLICABLE":["Y","N"],
-    "ASSOCIATED_TRADITIONAL_KNOWLEDGE_APPLICABLE":["Y","N"],
-    "ETHICS_PERMITS_MANDATORY":["Y","N"],
-    "SAMPLING_PERMITS_MANDATORY":["Y","N"],
-    "NAGOYA_PERMITS_MANDATORY":["Y","N"],
-    "TKLabels":["NOT_APPLICABLE","TK Attribution","TK Clan","TK Family","TK Multiple Communities","TK Community Voice", "TK Creative","TK Verified","TK Seasonal","TK Women General","TK Men General","TK Men Restricted","TK Women Restricted","TK Secret/Sacred","TK Open to Commercialisation","TK Non-Commercial","TK Community Use Only","TK Outreach","TK Open to Collaboration","BC Provenance","BC Multiple Communities","BC Clan","BC Consent Verified","BC Research Use","BC Open to Collaboration","BC Open to Commercialisation","BC Non-Commercial"]
+    "ORGANISM_PART":{
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["WHOLE_ORGANISM","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE","FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","POSTERIOR_BODY","HEPATOPANCREAS","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
+    },
+    "GAL":{
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["SANGER INSTITUTE","EARLHAM INSTITUTE","CNAG","SCILIFELAB","WGGC","NCCT","DRESDEN CONCEPT","FGC ZURICH","GENOSCOPE","GTF LAUSANNE","HELSINKI GENOMICS CORE FACILITY","NGS BERN","NORWEGIAN SEQUENCING CENTRE","UNIVERSITY OF BARI","UNIVERSITY OF FLORENCE","NEUROMICS SUPPORT FACILITY VIB","GIGAGENOMICS CORE UNIVERSITY LIEGE"]
+    },
+    "DIFFICULT_OR_HIGH_PRIORITY_SAMPLE":{
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["SANGER INSTITUTE","EARLHAMHIGH_PRIORITY","DIFFICULT","NOT_APPLICABLE","NOT_PROVIDED","NOT_COLLECTED","FULL_CURATION"]
+    },
+    "SPECIMEN_ID_RISK":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "SIZE_OF_TISSUE_IN_TUBE":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["VS","S","M","L","SINGLE_CELL","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
+    },
+    "TISSUE_REMOVED_FOR_BARCODING":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
+    },
+    "TISSUE_FOR_BARCODING":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["WHOLE_ORGANISM","HEAD","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE", "FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","MID_BODY","POSTERIOR_BODY","HEPATOPANCREAS","LEG","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE"]
+    },
+    "OTHER_FUNGAL_TISSUE":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
+    },
+    "DNA_REMOVED_FOR_BIOBANKING":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y", "N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
+    },
+    "PURPOSE_OF_SPECIMEN":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["REFERENCE_GENOME","SHORT_READ_SEQUENCING","DNA_BARCODING_ONLY","RNA_SEQUENCING","PROXY_VOUCHERING_ONLY"]
+    },
+    "HAZARD_GROUP":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["HG1","HG2","HG3"]
+    },
+    "REGULATORY_COMPLIANCE":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N","NOT_APPLICABLE"]
+    },
+    "INDIGENOUS_RIGHTS_APPLICABLE":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "ASSOCIATED_TRADITIONAL_KNOWLEDGE_APPLICABLE":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "ETHICS_PERMITS_MANDATORY":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "SAMPLING_PERMITS_MANDATORY":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "NAGOYA_PERMITS_MANDATORY":{ 
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["Y","N"]
+    },
+    "TKLabels":{
+        "description":"",
+        "mandatory": ["Y", "N"],
+        "options":["NOT_APPLICABLE","TK Attribution","TK Clan","TK Family","TK Multiple Communities","TK Community Voice", "TK Creative","TK Verified","TK Seasonal","TK Women General","TK Men General","TK Men Restricted","TK Women Restricted","TK Secret/Sacred","TK Open to Commercialisation","TK Non-Commercial","TK Community Use Only","TK Outreach","TK Open to Collaboration","BC Provenance","BC Multiple Communities","BC Clan","BC Consent Verified","BC Research Use","BC Open to Collaboration","BC Open to Commercialisation","BC Non-Commercial"]
+    }
 }
