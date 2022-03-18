@@ -1,102 +1,107 @@
 {
     "LIFESTAGE": {
-        "description":"",
-        "mandatory": ["Y", "N"],
-        "options":["ADULT", "JUVENILE", "PUPA", "LARVA", "ZYGOTE", "EMBRYO", "EGG"]
+        "description":"The age class or life stage of the organism at the time of collection.",
+        "mandatory": "mandatory",
+        "options":["ADULT", "JUVENILE", "PUPA", "LARVA", "ZYGOTE", "EMBRYO", "EGG","SPOROPHYTE","GAMETOPHYTE","SPORE_BEARING_STRUCTURE","VEGETATIVE_STRUCTURE","VEGETATIVE_CELL","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
     },
     "SEX":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Sex of the organism from which the sample was obtained'",
+        "mandatory": "mandatory",
         "options":["FEMALE","MALE","HERMAPHRODITE_MONOECIOUS","NOT_COLLECTED","NOT_APPLICABLE","NOT _PROVIDED"]
     },
     "ORGANISM_PART":{
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells.",
+        "mandatory": "mandatory",
         "options":["WHOLE_ORGANISM","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE","FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","POSTERIOR_BODY","HEPATOPANCREAS","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
     },
     "GAL":{
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"The name (or acronym) of the genome acquisition lab responsible for the sample.",
+        "mandatory": "optional",
         "options":["SANGER INSTITUTE","EARLHAM INSTITUTE","CNAG","SCILIFELAB","WGGC","NCCT","DRESDEN CONCEPT","FGC ZURICH","GENOSCOPE","GTF LAUSANNE","HELSINKI GENOMICS CORE FACILITY","NGS BERN","NORWEGIAN SEQUENCING CENTRE","UNIVERSITY OF BARI","UNIVERSITY OF FLORENCE","NEUROMICS SUPPORT FACILITY VIB","GIGAGENOMICS CORE UNIVERSITY LIEGE"]
     },
     "DIFFICULT_OR_HIGH_PRIORITY_SAMPLE":{
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Species/samples that are difficult to collect (rare) or high priority to push through sequencing for any reason",
+        "mandatory": "optional",
         "options":["SANGER INSTITUTE","EARLHAMHIGH_PRIORITY","DIFFICULT","NOT_APPLICABLE","NOT_PROVIDED","NOT_COLLECTED","FULL_CURATION"]
     },
     "SPECIMEN_ID_RISK":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Indicate if there is any risk that the SPECIMEN_ID provided does not reflect a single genetic entity OR the species names it has been submitted under",
+        "mandatory": "optional",
         "options":["Y","N"]
     },
     "SIZE_OF_TISSUE_IN_TUBE":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"How large the sample in the tube is.",
+        "mandatory": "optional",
         "options":["VS","S","M","L","SINGLE_CELL","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
     },
     "TISSUE_REMOVED_FOR_BARCODING":{ 
         "description":"",
-        "mandatory": ["Y", "N"],
+        "mandatory": ["optional", "mandatory"],
         "options":["Y","N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
     },
     "TISSUE_FOR_BARCODING":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
-        "options":["WHOLE_ORGANISM","HEAD","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE", "FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","MID_BODY","POSTERIOR_BODY","HEPATOPANCREAS","LEG","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE"]
+        "description":"What part of the organism was dissected for DNA barcoding (e.g. leg, soft-body tissue etc.). Muscle tissue is ideal for barcoding.",
+        "mandatory": "optional",
+        "options":["WHOLE_ORGANISM","HEAD","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE", "FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","MID_BODY","POSTERIOR_BODY","HEPATOPANCREAS","LEG","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
     },
-    "OTHER_FUNGAL_TISSUE":{ 
+    "TISSUE_REMOVED_FOR_BIOBANKIN":{ 
         "description":"",
-        "mandatory": ["Y", "N"],
-        "options":["NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
+        "mandatory": ["optional", "mandatory"],
+        "options":["Y","N","NOT_COLLECTED","NOT_APPLICABLE"]
+    },
+    "TISSUE_FOR_BIOBANKING":{ 
+        "description":"what part of the organism was dissected for biobanking (e.g. leg, soft-body tissue etc.)",
+        "mandatory": "optional",
+        "options":["WHOLE_ORGANISM","HEAD","THORAX","ABDOMEN","CEPHALOTHORAX","BRAIN","EYE", "FAT_BODY","INTESTINE","BODYWALL","TERMINAL_BODY","ANTERIOR_BODY","MID_BODY","POSTERIOR_BODY","HEPATOPANCREAS","LEG","BLOOD","LUNG","HEART","KIDNEY","LIVER","ENDOCRINE_TISSUE","SPLEEN","STOMACH","PANCREAS","MUSCLE","MODULAR_COLONY","TENTACLE","FIN","SKIN","SCAT","EGGSHELL","SCALES","MOLLUSC_FOOT","HAIR","GILL_ANIMAL","OVIDUCT","GONAD","OVARY_ANIMAL","TESTIS","SPERM_SEMINAL_FLUID","EGG","WHOLE_PLANT","SEEDLING","SEED","LEAF","FLOWER","BLADE","STEM","PETIOLE","SHOOT","BUD","THALLUS_PLANT","BRACT","MYCELIUM","MYCORRHIZA","SPORE_BEARING_STRUCTURE","HOLDFAST_FUNGI","STIPE","CAP","GILL_FUNGI","THALLUS_FUNGI","SPORE","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED","UNICELLULAR_ORGANISMS_IN_CULTURE","MULTICELLULAR_ORGANISMS_IN_CULTURE"]
     },
     "DNA_REMOVED_FOR_BIOBANKING":{ 
         "description":"",
-        "mandatory": ["Y", "N"],
+        "mandatory": ["optional", "mandatory"],
         "options":["Y", "N","NOT_COLLECTED","NOT_APPLICABLE","NOT_PROVIDED"]
     },
     "PURPOSE_OF_SPECIMEN":{ 
         "description":"",
-        "mandatory": ["Y", "N"],
+        "mandatory": "optional",
         "options":["REFERENCE_GENOME","SHORT_READ_SEQUENCING","DNA_BARCODING_ONLY","RNA_SEQUENCING","PROXY_VOUCHERING_ONLY"]
     },
     "HAZARD_GROUP":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"If the specimen needs to be processed in a containment level 1,2, or 3 lab",
+        "mandatory": "optional",
         "options":["HG1","HG2","HG3"]
     },
     "REGULATORY_COMPLIANCE":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Note that ERGA will not be able to process further any samples where N is entered",
+        "mandatory": "mandatory",
         "options":["Y","N","NOT_APPLICABLE"]
     },
     "INDIGENOUS_RIGHTS_APPLICABLE":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Mandatory information upon if indigenious rights are applicable to the sample/the species the sample was derived from",
+        "mandatory": "mandatory",
         "options":["Y","N"]
     },
     "ASSOCIATED_TRADITIONAL_KNOWLEDGE_APPLICABLE":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Mandatory information upon if indigenious rights are applicable to the sample/the species the sample was derived from",
+        "mandatory": "mandatory",
         "options":["Y","N"]
     },
     "ETHICS_PERMITS_MANDATORY":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Mandatory information upon if an ethics permit is needed to sample/sequence/voucher/biobank the sample/the species the sample was derived from",
+        "mandatory": "mandatory",
         "options":["Y","N"]
     },
     "SAMPLING_PERMITS_MANDATORY":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Mandatory information upon if sampling permits are needed to sample/sequence/voucher/biobank the sample/the species the sample was derived from",
+        "mandatory": "mandatory",
         "options":["Y","N"]
     },
     "NAGOYA_PERMITS_MANDATORY":{ 
-        "description":"",
-        "mandatory": ["Y", "N"],
+        "description":"Mandatory information upon if a permit in compliance with the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity is needed for the sample in question/the species the sample was derived from",
+        "mandatory": "mandatory",
         "options":["Y","N"]
     },
     "TKLabels":{
         "description":"",
-        "mandatory": ["Y", "N"],
+        "mandatory": ["optional", "mandatory"],
         "options":["NOT_APPLICABLE","TK Attribution","TK Clan","TK Family","TK Multiple Communities","TK Community Voice", "TK Creative","TK Verified","TK Seasonal","TK Women General","TK Men General","TK Men Restricted","TK Women Restricted","TK Secret/Sacred","TK Open to Commercialisation","TK Non-Commercial","TK Community Use Only","TK Outreach","TK Open to Collaboration","BC Provenance","BC Multiple Communities","BC Clan","BC Consent Verified","BC Research Use","BC Open to Collaboration","BC Open to Commercialisation","BC Non-Commercial"]
     }
 }
